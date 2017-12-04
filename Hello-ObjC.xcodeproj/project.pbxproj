@@ -66,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BA4ABE51FD5991100CC6776 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0B86A2FE1FAD9CB50040500B /* HTTPService.h */,
+				0B86A2FF1FAD9CB50040500B /* HTTPService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		0BA7670A1FA4D93000880E8E = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +107,7 @@
 				0BA767251FA4D93200880E8E /* main.m */,
 				0B303F7C1FA5BBFE00C81C34 /* Person.h */,
 				0B303F7D1FA5BBFE00C81C34 /* Person.m */,
-				0B86A2FE1FAD9CB50040500B /* HTTPService.h */,
-				0B86A2FF1FAD9CB50040500B /* HTTPService.m */,
+				0BA4ABE51FD5991100CC6776 /* Services */,
 			);
 			path = "Hello-ObjC";
 			sourceTree = "<group>";

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "HTTPService.h"
 
 
 @interface ViewController ()
@@ -20,24 +21,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    NSLog(@"Name: %@", self.name);
-    
-    self.name = @"Jack";
-    
-    _name = @"Peter";
-    
-    NSLog(@"Name: %@", _name);
-    
-    [self setName:@"Sylvia"];
-    
-    NSLog(@"Name: %@", [self name]);
-    
-    
-    Person *person1 = [[Person alloc]init];
-    person1.lastName = @"Xu";
-    [person1 setFirstName:@"nobody"];
-    
-    NSLog(@"%@",[person1 firstName]);
+    [[HTTPService instance] getTutorials:^(NSDictionary * _Nullable dataDict, NSString * _Nullable errMessage) {
+        if (dataDict) {
+            NSLog(@"Dictionary: %@", dataDict.debugDescription);
+        } else if (errMessage) {
+            // Display alert to user
+        }
+    }];
     
 
 }
