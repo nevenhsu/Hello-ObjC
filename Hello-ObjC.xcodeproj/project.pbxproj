@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B303F7E1FA5BBFE00C81C34 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B303F7D1FA5BBFE00C81C34 /* Person.m */; };
+		0B6F34B81FD98B83006BBE62 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F34B71FD98B83006BBE62 /* VideoCell.m */; };
 		0B86A3001FAD9CB50040500B /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B86A2FF1FAD9CB50040500B /* HTTPService.m */; };
 		0BA767181FA4D93100880E8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA767171FA4D93100880E8E /* AppDelegate.m */; };
 		0BA7671B1FA4D93100880E8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7671A1FA4D93100880E8E /* ViewController.m */; };
@@ -16,6 +16,7 @@
 		0BA767231FA4D93200880E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA767211FA4D93200880E8E /* LaunchScreen.storyboard */; };
 		0BA767261FA4D93200880E8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA767251FA4D93200880E8E /* main.m */; };
 		0BA767301FA4D93200880E8E /* Hello_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7672F1FA4D93200880E8E /* Hello_ObjCTests.m */; };
+		0BB3F7491FD994F000C12678 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3F7481FD994F000C12678 /* Video.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B303F7C1FA5BBFE00C81C34 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		0B303F7D1FA5BBFE00C81C34 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		0B6F34B61FD98B83006BBE62 /* VideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		0B6F34B71FD98B83006BBE62 /* VideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		0B86A2FE1FAD9CB50040500B /* HTTPService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
 		0B86A2FF1FAD9CB50040500B /* HTTPService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 		0BA767131FA4D93000880E8E /* Hello-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +47,8 @@
 		0BA7672B1FA4D93200880E8E /* Hello-ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello-ObjCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA7672F1FA4D93200880E8E /* Hello_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hello_ObjCTests.m; sourceTree = "<group>"; };
 		0BA767311FA4D93300880E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB3F7471FD994F000C12678 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		0BB3F7481FD994F000C12678 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B6F34B41FD98ADD006BBE62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7671C1FA4D93100880E8E /* Main.storyboard */,
+				0B6F34B61FD98B83006BBE62 /* VideoCell.h */,
+				0B6F34B71FD98B83006BBE62 /* VideoCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B6F34B51FD98AE6006BBE62 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0BA767191FA4D93100880E8E /* ViewController.h */,
+				0BA7671A1FA4D93100880E8E /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		0BA4ABE51FD5991100CC6776 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,17 +118,15 @@
 		0BA767151FA4D93000880E8E /* Hello-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				0BB3F7461FD994D900C12678 /* Model */,
+				0B6F34B51FD98AE6006BBE62 /* Controller */,
+				0B6F34B41FD98ADD006BBE62 /* View */,
 				0BA767161FA4D93000880E8E /* AppDelegate.h */,
 				0BA767171FA4D93100880E8E /* AppDelegate.m */,
-				0BA767191FA4D93100880E8E /* ViewController.h */,
-				0BA7671A1FA4D93100880E8E /* ViewController.m */,
-				0BA7671C1FA4D93100880E8E /* Main.storyboard */,
 				0BA7671F1FA4D93200880E8E /* Assets.xcassets */,
 				0BA767211FA4D93200880E8E /* LaunchScreen.storyboard */,
 				0BA767241FA4D93200880E8E /* Info.plist */,
 				0BA767251FA4D93200880E8E /* main.m */,
-				0B303F7C1FA5BBFE00C81C34 /* Person.h */,
-				0B303F7D1FA5BBFE00C81C34 /* Person.m */,
 				0BA4ABE51FD5991100CC6776 /* Services */,
 			);
 			path = "Hello-ObjC";
@@ -119,6 +139,15 @@
 				0BA767311FA4D93300880E8E /* Info.plist */,
 			);
 			path = "Hello-ObjCTests";
+			sourceTree = "<group>";
+		};
+		0BB3F7461FD994D900C12678 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BB3F7471FD994F000C12678 /* Video.h */,
+				0BB3F7481FD994F000C12678 /* Video.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +253,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA7671B1FA4D93100880E8E /* ViewController.m in Sources */,
+				0B6F34B81FD98B83006BBE62 /* VideoCell.m in Sources */,
 				0B86A3001FAD9CB50040500B /* HTTPService.m in Sources */,
 				0BA767261FA4D93200880E8E /* main.m in Sources */,
-				0B303F7E1FA5BBFE00C81C34 /* Person.m in Sources */,
 				0BA767181FA4D93100880E8E /* AppDelegate.m in Sources */,
+				0BB3F7491FD994F000C12678 /* Video.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
