@@ -7,6 +7,7 @@
 //
 
 #import "VideoCell.h"
+#import "Video.h"
 
 @interface VideoCell()
 @property (weak, nonatomic) IBOutlet UIView *cellView;
@@ -23,7 +24,7 @@
     [super awakeFromNib];
     
     self.layer.cornerRadius = 2.0;
-    self.layer.shadowColor = [UIColor colorWithRed:157/0 green:157/0 blue:157/0 alpha:0.8].CGColor;
+    self.layer.shadowColor = [UIColor colorWithRed:157/255 green:157/255 blue:157/255 alpha:0.8].CGColor;
     self.layer.shadowOpacity = 0.8;
     self.layer.shadowRadius = 4.0;
     self.layer.shadowOffset = CGSizeMake(0, 2.0);
@@ -33,6 +34,12 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void) updateUI:(nonnull Video*)video {
+    self.titleLbl.text = video.videoTitle;
+    self.descLbl.text = video.videoDescription;
+    self.thumbImg.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:video.thumbnailUrl]]];
 }
 
 @end

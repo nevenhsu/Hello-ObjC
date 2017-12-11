@@ -10,6 +10,7 @@
 #import "HTTPService.h"
 #import "Video.h"
 #import "VideoCell.h"
+#import "VideoVC.h"
 
 
 @interface ViewController ()
@@ -68,11 +69,14 @@
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    Video *video = [self.videoList objectAtIndex:indexPath.row];
+    VideoCell *vidCell = (VideoCell*)cell;
+    [vidCell updateUI:video];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    Video *video = [self.videoList objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"VideoVC" sender:video];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -84,9 +88,14 @@
 }
 
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80.0;
+}
 
-
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    VideoVC *videoVC = (VideoVC*)segue.destinationViewController;
+    videoVC.video = (Video*)sender;
+}
 
 
 

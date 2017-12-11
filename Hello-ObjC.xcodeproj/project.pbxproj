@@ -17,6 +17,7 @@
 		0BA767261FA4D93200880E8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA767251FA4D93200880E8E /* main.m */; };
 		0BA767301FA4D93200880E8E /* Hello_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7672F1FA4D93200880E8E /* Hello_ObjCTests.m */; };
 		0BB3F7491FD994F000C12678 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3F7481FD994F000C12678 /* Video.m */; };
+		0BF85D181FDED04300EDDDAA /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF85D171FDED04300EDDDAA /* VideoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		0BA767311FA4D93300880E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BB3F7471FD994F000C12678 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		0BB3F7481FD994F000C12678 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		0BF85D161FDED04300EDDDAA /* VideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		0BF85D171FDED04300EDDDAA /* VideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 			children = (
 				0BA767191FA4D93100880E8E /* ViewController.h */,
 				0BA7671A1FA4D93100880E8E /* ViewController.m */,
+				0BF85D161FDED04300EDDDAA /* VideoVC.h */,
+				0BF85D171FDED04300EDDDAA /* VideoVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				0B6F34B81FD98B83006BBE62 /* VideoCell.m in Sources */,
 				0B86A3001FAD9CB50040500B /* HTTPService.m in Sources */,
 				0BA767261FA4D93200880E8E /* main.m in Sources */,
+				0BF85D181FDED04300EDDDAA /* VideoVC.m in Sources */,
 				0BA767181FA4D93100880E8E /* AppDelegate.m in Sources */,
 				0BB3F7491FD994F000C12678 /* Video.m in Sources */,
 			);

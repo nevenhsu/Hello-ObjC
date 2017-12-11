@@ -35,30 +35,31 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="64" id="JNc-S7-8UB" customClass="VideoCell">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="80" id="JNc-S7-8UB" customClass="VideoCell">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JNc-S7-8UB" id="iMU-KB-yYI">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqT-bJ-XBA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                                    <rect key="frame" x="8" y="8" width="304" height="64"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K4v-lR-4mk">
                                                             <rect key="frame" x="8" y="8" width="80" height="48"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="arv-7o-5Ip"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Cool Things On AMAZON In 2017" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoU-hA-dI0">
-                                                            <rect key="frame" x="96" y="8" width="216" height="14.5"/>
+                                                            <rect key="frame" x="96" y="8" width="200" height="14.5"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for watching, don't forget to like, subscribe and check out more awesome videos below!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89p-Of-eGw">
-                                                            <rect key="frame" x="96" y="35" width="216" height="21"/>
+                                                            <rect key="frame" x="96" y="35" width="200" height="21"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -78,13 +79,15 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="DqT-bJ-XBA" secondAttribute="bottom" id="05l-T3-tXJ"/>
-                                                <constraint firstAttribute="trailing" secondItem="DqT-bJ-XBA" secondAttribute="trailing" id="A0Q-ak-Wcu"/>
-                                                <constraint firstItem="DqT-bJ-XBA" firstAttribute="top" secondItem="iMU-KB-yYI" secondAttribute="top" id="Ah5-vU-2Zu"/>
-                                                <constraint firstItem="DqT-bJ-XBA" firstAttribute="leading" secondItem="iMU-KB-yYI" secondAttribute="leading" id="u3h-UT-Umh"/>
+                                                <constraint firstAttribute="trailing" secondItem="DqT-bJ-XBA" secondAttribute="trailing" constant="8" id="NEf-Ma-bad"/>
+                                                <constraint firstItem="DqT-bJ-XBA" firstAttribute="top" secondItem="iMU-KB-yYI" secondAttribute="top" constant="8" id="Nr4-62-hWd"/>
+                                                <constraint firstItem="DqT-bJ-XBA" firstAttribute="leading" secondItem="iMU-KB-yYI" secondAttribute="leading" constant="8" id="vZM-LZ-33K"/>
+                                                <constraint firstAttribute="bottom" secondItem="DqT-bJ-XBA" secondAttribute="bottom" constant="8" id="ywE-On-dMS"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="cellView" destination="DqT-bJ-XBA" id="Q8O-hD-Mwn"/>
                                             <outlet property="descLbl" destination="89p-Of-eGw" id="omf-os-hEn"/>
@@ -109,11 +112,80 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Y1S-Zn-TJd" id="X1n-zk-f3P"/>
+                        <segue destination="NkX-Be-bDx" kind="show" identifier="VideoVC" id="huR-jp-589"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.25" y="117.25352112676056"/>
+            <point key="canvasLocation" x="113" y="117"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="48Q-kV-MDr">
+            <objects>
+                <viewController id="NkX-Be-bDx" customClass="VideoVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yt1-tw-Ilw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Gj-ew-HRc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="3fI-al-TAJ"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Cool Things On AMAZON In 2017 10 Cool Things On AMAZON In 2017" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdf-rM-3ck">
+                                <rect key="frame" x="16" y="264" width="288" height="37.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for watching, don't forget to like, subscribe and check out more awesome videos below!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltn-6b-tSC">
+                                <rect key="frame" x="16" y="325" width="288" height="49"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwd-24-ib9">
+                                <rect key="frame" x="16" y="504" width="288" height="32"/>
+                                <color key="backgroundColor" red="0.81661039589999995" green="0.23502624029999999" blue="0.003539980622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="JEg-Ze-teC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedDoneBtn:" destination="NkX-Be-bDx" eventType="touchUpInside" id="4yk-Du-oaT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dKP-iA-Pnj" firstAttribute="trailing" secondItem="Wdf-rM-3ck" secondAttribute="trailing" constant="16" id="5RY-z3-C6Y"/>
+                            <constraint firstItem="ltn-6b-tSC" firstAttribute="top" secondItem="Wdf-rM-3ck" secondAttribute="bottom" constant="24" id="Pwd-yt-Osl"/>
+                            <constraint firstItem="Xwd-24-ib9" firstAttribute="leading" secondItem="dKP-iA-Pnj" secondAttribute="leading" constant="16" id="Pxy-pe-Oau"/>
+                            <constraint firstItem="dKP-iA-Pnj" firstAttribute="trailing" secondItem="Xwd-24-ib9" secondAttribute="trailing" constant="16" id="QNg-g2-5sw"/>
+                            <constraint firstItem="dKP-iA-Pnj" firstAttribute="trailing" secondItem="ltn-6b-tSC" secondAttribute="trailing" constant="16" id="SCt-bn-OZe"/>
+                            <constraint firstItem="ltn-6b-tSC" firstAttribute="leading" secondItem="dKP-iA-Pnj" secondAttribute="leading" constant="16" id="cMp-kg-v33"/>
+                            <constraint firstItem="dKP-iA-Pnj" firstAttribute="bottom" secondItem="Xwd-24-ib9" secondAttribute="bottom" constant="32" id="d28-3S-avD"/>
+                            <constraint firstItem="Wdf-rM-3ck" firstAttribute="top" secondItem="9Gj-ew-HRc" secondAttribute="bottom" constant="24" id="g61-hg-Mlr"/>
+                            <constraint firstItem="9Gj-ew-HRc" firstAttribute="leading" secondItem="dKP-iA-Pnj" secondAttribute="leading" id="opv-i4-lSQ"/>
+                            <constraint firstItem="Wdf-rM-3ck" firstAttribute="leading" secondItem="dKP-iA-Pnj" secondAttribute="leading" constant="16" id="uxa-RF-0Eb"/>
+                            <constraint firstItem="9Gj-ew-HRc" firstAttribute="trailing" secondItem="dKP-iA-Pnj" secondAttribute="trailing" id="uxu-je-Pyu"/>
+                            <constraint firstItem="9Gj-ew-HRc" firstAttribute="top" secondItem="Yt1-tw-Ilw" secondAttribute="top" id="yum-pi-V1w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dKP-iA-Pnj"/>
+                    </view>
+                    <connections>
+                        <outlet property="descLbl" destination="ltn-6b-tSC" id="AzU-rV-8gO"/>
+                        <outlet property="titleLbl" destination="Wdf-rM-3ck" id="F6Z-XU-K1v"/>
+                        <outlet property="webView" destination="9Gj-ew-HRc" id="5Mq-17-8I0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3s-zC-H4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836.25" y="117.25352112676056"/>
         </scene>
     </scenes>
 </document>
